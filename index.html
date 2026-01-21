@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de desarrollo mobile - iOS y Android">
+    <meta name="author" content="Jesus Rivero">
+    <title>Jesus Rivero - Mobile Developer</title>
+    
+   
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layouts/grid.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/skills.css">
+    <link rel="stylesheet" href="css/components/projects.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/utilities/helpers.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+   <!-- Header/Navigation -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#home" class="nav__logo">
+            <span class="nav__logo-bracket">&lt;</span>
+            <span class="nav__logo-text">Jesus Rivero</span>
+            <span class="nav__logo-bracket">/&gt;</span>
+        </a>
+        
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active">
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <span>Sobre mí</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">
+                        <span>Proyectos</span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+        </button>
+    </nav>
+</header>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__greeting">Hola, soy</span>
+                    <h1 class="hero__title">
+                        <span class="hero__name">Jesus Rivero</span>
+                    </h1>
+                    <h2 class="hero__subtitle">
+                        <span class="hero__role">Mobile Developer</span>
+                    </h2>
+                    <p class="hero__description">
+                        Especializado en desarrollo de aplicaciones móviles nativas.
+                        Creando experiencias móviles excepcionales con código limpio y arquitecturas escalables.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">
+                            Ver Proyectos
+                        </a>
+                        <a href="#contact" class="btn btn--outline">
+                            Contáctame
+                        </a>
+                    </div>
+                    <div class="hero__social">
+                        <a href="https://github.com/jesusrivero" target="_blank" class="hero__social-link" aria-label="GitHub">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jes%C3%BAs-rivero-5b1145365/" target="_blank" class="hero__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:jesusparrauen5@gmail.com" class="hero__social-link" aria-label="Email">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <img src="assets/images/projects/project1.jpg" alt="Jesus Rivero - Mobile Developer" class="hero__img">
+                        <div class="hero__image-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- About Section -->
+<section class="about section" id="about">
+    <div class="about__container container">
+        <h2 class="section__title">Sobre mí</h2>
+        <div class="about__content">
+            <div class="about__text">
+                <p class="about__description">
+                    Soy desarrollador Android enfocado en la creación de aplicaciones móviles modernas, 
+                    eficientes y centradas en el usuario. Me especializo en desarrollo nativo utilizando 
+                    Kotlin y Jetpack Compose, aplicando arquitecturas limpias y buenas prácticas.
+                </p>
+                <p class="about__description">
+                    Me apasiona escribir código limpio, escalable y mantenible, cuidando tanto la experiencia 
+                    del usuario como el rendimiento de la aplicación. Actualmente concentro mi crecimiento 
+                    profesional en el ecosistema Android y en tecnologías que aporten valor real a los productos.
+                </p>
+            </div>
+            <div class="about__stats">
+                <div class="about__stat">
+                    <span class="about__stat-number">2+</span>
+                    <span class="about__stat-label">Años de Experiencia</span>
+                </div>
+                <div class="about__stat">
+                    <span class="about__stat-number">4+</span>
+                    <span class="about__stat-label">Proyectos Android</span>
+                </div>
+                <div class="about__stat">
+                    <span class="about__stat-number">10+</span>
+                    <span class="about__stat-label">Tecnologías</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+        <section class="skills section" id="skills">
+            <div class="skills__container container">
+            
+                <div class="skills__content">
+                   
+
+      <!-- Tools & Technologies -->
+<div class="skills__category">
+    <h3 class="skills__category-title">
+        <span class="skills__icon">🛠️</span>
+        Tools & Technologies
+    </h3>
+    <div class="skills__tags">
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Firebase</span>
+        <span class="skill-tag">Firestore</span>
+        <span class="skill-tag">Firebase Auth</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">Retrofit</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">GitHub Actions</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Material Design</span>
+    </div>
+</div>
+
+
+                <!-- Arquitectura y Patrones -->
+<div class="skills__category">
+    <h3 class="skills__category-title">
+        <span class="skills__icon">🏗️</span>
+        Arquitectura y Patrones
+    </h3>
+    <div class="skills__tags">
+        <span class="skill-tag">MVVM</span>
+        <span class="skill-tag">Arquitectura Limpia</span>
+        <span class="skill-tag">MVC</span>
+        <span class="skill-tag">Inyección de Dependencias</span>
+        <span class="skill-tag">Principios SOLID</span>
+    </div>
+</div>
+
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="projects__container container">
+                <h2 class="section__title">Proyectos Destacados</h2>
+                <div class="projects__filters">
+                    <!-- <button class="filter-btn active" data-filter="all">Todos</button> -->
+                    <!-- <button class="filter-btn" data-filter="ios">iOS</button>
+                    <button class="filter-btn" data-filter="android">Android</button>
+                    <button class="filter-btn" data-filter="cross-platform">Multiplataforma</button> -->
+                </div>
+                <div class="projects__grid" id="projects-grid">
+                    <!-- Los proyectos se cargarán dinámicamente desde JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <h2 class="section__title">Hablemos</h2>
+                <p class="contact__description">
+                    ¿Tienes un proyecto en mente? Estoy disponible para colaboraciones y nuevas oportunidades.
+                </p>
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__info-item">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <div>
+                                <span class="contact__info-label">Email</span>
+                                <a href="mailto:tu@email.com" class="contact__info-value">jesusparrauen5@email.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__info-item">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            <div>
+                                <span class="contact__info-label">GitHub</span>
+                                <a href="https://github.com/jesusrivero" target="_blank" class="contact__info-value">@jesusrivero</a>
+                            </div>
+                        </div>
+                        <div class="contact__info-item">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <div>
+                                <span class="contact__info-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/jes%C3%BAs-rivero-5b1145365/" target="_blank" class="contact__info-value">jesusrivero</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__text">
+                &copy; 2026. Diseñado y desarrollado usando HTML, CSS y JavaScript.
+            </p>
+            <div class="footer__links">
+                <a href="#home" class="footer__link">Volver arriba ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/data/projects.js"></script>
+    <script src="js/utils/helpers.js"></script>
+    <script src="js/components/navigation.js"></script> 
+    <script src="js/components/projects.js"></script>
+    <script src="js/components/animations.js"></script>
+    
+</body>
+</html>
